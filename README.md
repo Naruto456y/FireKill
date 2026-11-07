@@ -8,7 +8,7 @@
 
 Вам предстоит управлять персонажем, который должен уничтожать волны врагов, уклоняться от атак и собирать монеты. С каждым уровнем сложность возрастает: враги становятся быстрее, появляются новые типы противников и боссы.
 
-![Gameplay Screenshot](screenshots/gameplay.png)
+![Gameplay Screenshot](screenshots/gameplay.jpg)
 
 ## ✨ Особенности
 
@@ -49,18 +49,14 @@
 
 ## 📸 Скриншоты
 
-| Главное меню | Игровой процесс | Магазин |
-|--------------|-----------------|---------|
-| ![Menu](screenshots/menu.png) | ![Game](screenshots/game.png) | ![Shop](screenshots/shop.png) |
-
-| Достижения | Информация о врагах | Game Over |
-|------------|---------------------|-----------|
-| ![Achievements](screenshots/achievements.png) | ![Enemies](screenshots/enemies.png) | ![Game Over](screenshots/gameover.png) |
+| Главное меню | Игровой процесс |
+|---|---|
+| ![Меню](screenshots/menu.jpg) | ![Игра](screenshots/gameplay.jpg) |
 
 ## 🛠 Установка и запуск
 
 ### Требования
-- Python 3.6 или выше
+- Python 3.10 или выше
 - Библиотека Pygame
 
 ### Установка
@@ -69,3 +65,31 @@
 ```bash
 git clone https://github.com/Naruto456y/FireKill.git
 cd FireKill
+```
+
+2. **Установите зависимости и запустите:**
+```bash
+pip install -r requirements.txt
+python FireKill.py
+```
+
+### Сборка exe
+
+```bash
+pip install pyinstaller
+pyinstaller FireKill.spec
+```
+
+## 📁 Структура
+
+```
+FireKill.py     игра
+FireKill.spec   конфигурация PyInstaller
+images/         спрайты, фон, иконки
+sounds/         музыка и звуки
+screenshots/    скриншоты для README
+```
+
+## 👤 Автор
+
+Yusuf ([@Naruto456y](https://github.com/Naruto456y)). Лицензия [MIT](LICENSE).
